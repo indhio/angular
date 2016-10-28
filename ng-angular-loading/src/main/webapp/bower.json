@@ -1,0 +1,23 @@
+{
+  "name": "ng-angular-loading",
+  "homepage": "https://github.com/indhio/angular",
+  "authors": [
+    "indhio <indhio@gmail.com>"
+  ],
+  "description": "ng-angular-loading",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "1.12.4",
+    "angular-ui-router": "^0.3.1",
+    "angular-http-loader": "^0.1.7"
+  }
+}
