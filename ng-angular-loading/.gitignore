@@ -1,6 +1,6 @@
-/.settings/
-/.project
-/.DS_Store
-/.classpath
-/.tern-project
 /target/
+/.settings/
+/.classpath
+/.project
+/.tern-project
+/.DS_Store
