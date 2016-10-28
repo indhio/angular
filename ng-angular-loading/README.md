@@ -1,10 +1,7 @@
-# angular
+# ng-angular-loading
 ----
 #### Componentes para Angular
 
-- sss
-- sdsf
-- sdffds
-- sdfs
-- sdfs
-
+- ui.router
+- ng.httpLoader
+- ng-angular-loading
