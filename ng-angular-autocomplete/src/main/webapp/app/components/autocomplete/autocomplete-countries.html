@@ -1,0 +1,16 @@
+<div class="row control-group" >
+     <div class="form-group col-lg-9" ng-controller='AutocompleteCountriesController'>
+   			
+		<!-- <input auto-complete ui-items="names" ng-model="selected"> -->
+		<input type="text" 
+			ng-model="selected" 
+			class="form-control" maxlength="70" size="70"
+			uib-typeahead="country as country.name for country in countries | filter:{name:$viewValue}"
+			typeahead-show-hint="true" 
+			typeahead-min-length="1"/>
+		
+		<br/>
+		Country selected = {{selected}}
+		
+     	</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row control-group" >
+     	<div class="form-group col-lg-9" ng-controller='AutocompleteStatesController'>
+   			
+		<!-- <input auto-complete ui-items="names" ng-model="selected"> -->
+		<input type="text" 
+			ng-model="selected" 
+			class="form-control" maxlength="70" size="70"
+			uib-typeahead="state as state.name for state in states | filter:{name:$viewValue}"
+			typeahead-show-hint="true" 
+			typeahead-min-length="1"/>
+		
+		<br/>
+		State selected = {{selected}}
+		
+     	</div>
+</div>
