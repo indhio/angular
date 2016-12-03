@@ -1,7 +1,6 @@
-# angular
+# ng-angular-restangular
 ----
 #### Componentes para Angular
-
 
 - ui.router
 - ng.httpLoader
