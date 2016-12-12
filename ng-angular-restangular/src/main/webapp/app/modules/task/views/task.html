@@ -1,0 +1,66 @@
+<section class="content-header">
+	<ul class="breadcrumb">
+        <li><a ui-sref="dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Task</li>
+    </ul>
+</section>
+<section class="content">
+	<h1 class="page-header">Task</h1>
+    <div class="row" ng-show="pager">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">List of tasks
+                    	<div class="input-group pull-right col-md-3">
+	                      <input type="text" ng-model="filterText" class="form-control" placeholder="Search..." />
+	                      <span class="input-group-addon">
+						  	<i class="glyphicon glyphicon-search"></i>
+					      </span>
+						</div>
+                    </h3>
+                </div>
+                <div class="box-body no-padding">
+                    <div ng-hide="filteredText.length" class="no-padding">
+                   		<table class="table table-striped ">
+                    		<tr>
+                    			<th class="text-center">No records found.</th>
+                   			</tr>
+                 		</table>
+                    </div>
+                    <div ng-show="filteredText.length" class="no-padding">
+                    	
+                       <table class="table table-striped ">
+                            <thead>
+                            <tr>
+                                <th class="text-center" width="10">ID</th>
+                                <th class="text-center">Task</th>
+                                <th class="text-center" width="10">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in filteredText = (pager | filter : filterText) | filter: filterText | limitTo:10:10*(currentPage-1)">
+                                <td>{{item.id}}</td>
+                                <td>{{item.name}}</td>
+                                <td class="text-center">
+                                	<span class="glyphicon glyphicon-search pointer" aria-hidden="true" title='View' ui-sref="taskForm({ id: item.id })"></span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div ng-show="pager.length" class="box-footer">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p ng-show="pager.length">Count data : {{filteredText.length}}</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul uib-pagination total-items="filteredText.length" ng-model="currentPage" max-size="maxSize" class="pagination-sm pull-right" boundary-links="true"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

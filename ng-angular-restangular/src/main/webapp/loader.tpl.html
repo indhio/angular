@@ -1,0 +1,20 @@
+<div id="spinner" class="spinner">
+	<img ng-src='assets/loader.tpl.gif' />
+</div>
+
+<script>
+	function ajustarHeightSpinner(){
+		var windowHeight = screen.height;
+		$('.spinner').css({
+			height: screen.height + 'px'
+		});
+	}
+
+	$(document).resize(function() {
+		ajustarHeightSpinner();
+	});
+
+	$( document ).ready(function() {
+		ajustarHeightSpinner();
+	});
+</script>
