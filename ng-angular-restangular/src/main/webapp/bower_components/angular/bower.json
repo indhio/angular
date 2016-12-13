@@ -1,6 +1,10 @@
 {
   "name": "angular",
+<<<<<<< HEAD
   "version": "1.6.0",
+=======
+  "version": "1.5.8",
+>>>>>>> origin/master
   "license": "MIT",
   "main": "./angular.js",
   "ignore": [],

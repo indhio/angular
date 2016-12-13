@@ -5,6 +5,7 @@
 
 	var app = angular.module('ng-angular-restangular.user.services', []);
 
+<<<<<<< HEAD
 	app.factory('UserService', [ 'Restangular', function(Restangular) {
 		var service = {};
 		service.route = "user/";
@@ -20,6 +21,10 @@
 		service.save = function(user) {
 			return Restangular.all(service.route).post(user);
 		};
+=======
+	app.factory('UserService', [ '$log', '$http', 'appConfig', function($log, $http, appConfig) {
+		var service = {};
+>>>>>>> origin/master
 
 		return service;
 	} ]);

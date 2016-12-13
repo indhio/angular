@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/angular-ui/ui-router/compare/0.3.1...0.3.2) (2016-11-03)
 
@@ -13,6 +14,8 @@
 
 
 
+=======
+>>>>>>> origin/master
 <a name="0.3.1"></a>
 ### 0.3.1 (2016-06-03)
 

@@ -11,6 +11,7 @@
 			url : "/task",
 			templateUrl : 'app/modules/task/views/task.html',
 			controller : 'TaskController',
+<<<<<<< HEAD
 		});
 
 		$stateProvider.state("taskForm", {
@@ -18,6 +19,9 @@
 			templateUrl : 'app/modules/task/views/taskForm.html',
 			controller : 'TaskFormController',
 		});
+=======
+		})
+>>>>>>> origin/master
 
 	})
 

@@ -11,6 +11,7 @@
 			url : "/user",
 			templateUrl : 'app/modules/user/views/user.html',
 			controller : 'UserController',
+<<<<<<< HEAD
 		});
 
 		$stateProvider.state("userForm", {
@@ -18,6 +19,9 @@
 			templateUrl : 'app/modules/user/views/userForm.html',
 			controller : 'UserFormController',
 		});
+=======
+		})
+>>>>>>> origin/master
 
 	})
 
