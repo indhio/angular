@@ -209,14 +209,6 @@ function map(collection, callback) {
   return result;
 }
 
-<<<<<<< HEAD
-// issue #2676 #2889
-function silenceUncaughtInPromise (promise) {
-  return promise.then(undefined, function() {}) && promise;
-}
-
-=======
->>>>>>> origin/master
 /**
  * @ngdoc overview
  * @name ui.router.util

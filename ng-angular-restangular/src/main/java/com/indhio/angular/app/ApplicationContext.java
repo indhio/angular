@@ -40,14 +40,9 @@ public class ApplicationContext implements Serializable {
 		this.USERS = new ArrayList<User>();
 
 		Faker faker = new Faker();
-<<<<<<< HEAD
 		int total = faker.number().numberBetween(1, 500);
 		for (int i = 0; i < total; i++) {
 			Long id = faker.number().numberBetween(1L, 999999999L);
-=======
-		for (int i = 0; i < 100; i++) {
-			Long id = faker.number().numberBetween(1L, Long.MAX_VALUE);
->>>>>>> origin/master
 			String name = faker.name().fullName();
 			String email = faker.internet().emailAddress();
 			String phone = faker.phoneNumber().phoneNumber();
@@ -61,22 +56,15 @@ public class ApplicationContext implements Serializable {
 		this.TASKS = new ArrayList<Task>();
 
 		Faker faker = new Faker();
-<<<<<<< HEAD
 		int total = faker.number().numberBetween(1, 500);
 		for (int i = 0; i < total; i++) {
 			Long id = faker.number().numberBetween(1L, 999999999L);
 			String name = faker.book().title();
-=======
-		for (int i = 0; i < 100; i++) {
-			Long id = faker.number().numberBetween(1L, Long.MAX_VALUE);
-			String name = faker.name().lastName();
->>>>>>> origin/master
 			this.TASKS.add(new Task(id, name, ""));
 		}
 		logger.info(this.TASKS.toString());
 	}
 
-<<<<<<< HEAD
 	public User getUser(Long id) {
 		User user = null;
 		if (id != null) {
@@ -136,8 +124,6 @@ public class ApplicationContext implements Serializable {
 		}
 	}
 
-=======
->>>>>>> origin/master
 	public List<User> getUSERS() {
 		return USERS;
 	}

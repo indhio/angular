@@ -6,7 +6,6 @@
 
 	var app = angular.module('ng-angular-restangular.user.controllers', []);
 
-<<<<<<< HEAD
 	app.controller('UserController', [ 'UserService', '$scope', function(UserService, $scope) {
 		var self = this;
 
@@ -38,11 +37,6 @@
 			});
 		};
 
-=======
-	app.controller('UserController', [ 'UserService', function(UserService) {
-		var self = this;
-
->>>>>>> origin/master
 	} ]);
 
 })();

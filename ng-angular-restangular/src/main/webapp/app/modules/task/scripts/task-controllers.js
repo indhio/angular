@@ -6,7 +6,6 @@
 
 	var app = angular.module('ng-angular-restangular.task.controllers', []);
 
-<<<<<<< HEAD
 	app.controller('TaskController', [ 'TaskService', '$scope', function(TaskService, $scope) {
 		var self = this;
 
@@ -37,11 +36,6 @@
 			});
 		};
 
-=======
-	app.controller('TaskController', [ 'TaskService', function(TaskService) {
-		var self = this;
-
->>>>>>> origin/master
 	} ]);
 
 })();
