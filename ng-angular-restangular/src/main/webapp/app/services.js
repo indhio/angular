@@ -28,7 +28,7 @@
 		// uibPaginationConfig.previousText = 'Anterior';
 		// uibPaginationConfig.nextText = 'Próxima';
 		// uibPaginationConfig.lastText = 'Última';
-	})
+	});
 
 	app.config(function(uibDatepickerConfig, uibDatepickerPopupConfig) {
 		uibDatepickerConfig.startingDay = 1;
@@ -38,6 +38,6 @@
 		// uibDatepickerPopupConfig.currentText = 'Hoje';
 		// uibDatepickerPopupConfig.clearText = 'Limpar';
 		// uibDatepickerPopupConfig.closeText = 'Fechar';
-	})
+	});
 
 })();
